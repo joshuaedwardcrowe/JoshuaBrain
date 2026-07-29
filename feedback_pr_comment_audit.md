@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8121d6e0-09a8-4ea6-827a-4c20a4a8d259
-  modified: 2026-07-26T23:39:30.841Z
+  modified: 2026-07-29T23:29:36.249Z
 ---
 
 A GitHub pull request has **two independent comment endpoints**, and
@@ -23,7 +23,7 @@ coverage of this PR?") sat unanswered because only the `pulls/.../comments`
 endpoint was checked. The user had to point out the miss.
 
 **How to apply:** whenever auditing/replying to "all comments on a PR"
-(this is what [[feedback_pr_size_limit]] and similar cross-repo rules
+(this is what [[methodology_pr_size_limit]] and similar cross-repo rules
 sit alongside), query both endpoints with `--paginate`, not just one.
 Reply to inline comments via the pulls-comments `/replies` endpoint;
 reply to top-level comments via a new `issues/{pr}/comments` POST. Both

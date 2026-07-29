@@ -5,12 +5,12 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-29T18:12:59.323Z
+  modified: 2026-07-29T23:29:51.102Z
 ---
 
 A spike (investigation) concludes with a binary outcome:
 
-- **No new complexity** — the investigation confirms the work is as scoped/simple as expected. Close the spike issue and open a fresh, cleanly-titled delivery-stage ticket (per [[feedback_issue_title_convention]] — `type(scope): description`) for the actual build. That new ticket gets sized in a backlog refinement session, not the spike itself.
+- **No new complexity** — the investigation confirms the work is as scoped/simple as expected. Close the spike issue and open a fresh, cleanly-titled delivery-stage ticket (per [[methodology_issue_title_convention]] — `type(scope): description`) for the actual build. That new ticket gets sized in a backlog refinement session, not the spike itself.
 - **New complexity** — not yet specified by the user as of 2026-07-29; don't assume a procedure for this branch, ask when it comes up.
 
 **Why:** Stated directly by the user (2026-07-29) as a general rule, in the context of resolving issue #59 (YnabSharp's Money Movements investigation) — the investigation found the work was genuinely scoped and buildable with no hidden wrinkles, so per this rule it should close and hand off to a new ticket rather than being retitled/reused in place.
