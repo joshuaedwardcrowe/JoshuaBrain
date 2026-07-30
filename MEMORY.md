@@ -6,6 +6,7 @@
 - [Milestone naming convention](feedback_milestone_naming_convention.md) — name after the external spec/version (e.g. `YNAB API v1.86.0`), not a goal description
 - [Sub-issue chronological order](feedback_subissue_chronological_order.md) — hard rule: sub-issues must be planned jointly for delivery order; new projects start with a planning spike (mixed: rule + a sequencing mistake it came from)
 - [Spike outcome rule](feedback_spike_outcome_rule.md) — spike resolves to new-complexity or no-new-complexity; latter closes the spike and opens a fresh ticket (mixed: rule + how it was learned)
+- [Idea routing](feedback_idea_routing.md) — future feature ideas go on the GitHub Ideas project board as an issue, not into memory
 
 ## Feedback — methodology (stated working practices, not corrections)
 
