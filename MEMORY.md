@@ -18,7 +18,7 @@
 - [Four homes framework](methodology_four_homes_framework.md) — CAIRN (any team) / SoloCAIRN (any solo maintainer) / JoshuaBrain (personal only) / each repo's own CONTRIBUTING.md (binding, per-repo, incl. simulated-org infra)
 - [Traditional project board layout](methodology_traditional_project_board_layout.md) — delivery board Status pipeline Backlog→Done, Estimate, Priority High/Medium/Low (standardize #8's P0/P1/P2 outlier)
 - [Idea board layout](methodology_idea_board_layout.md) — Ideas board Status renamed to pipeline stages: New (pre-WAG)→WAG'd→SWAG'd/Prioritized→Released
-- [Docs folder layout](methodology_docs_folder_layout.md) — YnabSharp/KitCli use docs/{adr,concepts,reviews} w/ 0000-template.md; SpendfulnessCli's flat ADR/+CONCEPTS.md is intentional, not a gap
+- [Docs folder layout](methodology_docs_folder_layout.md) — docs/{adr,concepts,reviews} w/ 0000-template.md applies to every repo incl. SpendfulnessCli; its flat ADR/+CONCEPTS.md is a gap, tracked as SpendfulnessCli#195
 
 ## Project context — routed by which repo/ecosystem is active
 
