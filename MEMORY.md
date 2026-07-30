@@ -21,6 +21,7 @@
 - [Traditional project board layout](methodology_traditional_project_board_layout.md) — delivery board Status pipeline Backlog→Done, Estimate, Priority High/Medium/Low (standardize #8's P0/P1/P2 outlier)
 - [Idea board layout](methodology_idea_board_layout.md) — Ideas board Status renamed to pipeline stages: New (pre-WAG)→WAG'd→SWAG'd/Prioritized→Released
 - [Docs folder layout](methodology_docs_folder_layout.md) — docs/{adr,concepts,reviews} w/ 0000-template.md applies to every repo incl. SpendfulnessCli; its flat ADR/+CONCEPTS.md is a gap, tracked as SpendfulnessCli#195
+- [PR mirrors issue metadata](methodology_pr_mirrors_issue_metadata.md) — PRs should carry their linked issue's labels/milestone, applied per-repo (not a SoloCAIRN rule) — across every repo
 
 ## Project context — routed by which repo/ecosystem is active
 
