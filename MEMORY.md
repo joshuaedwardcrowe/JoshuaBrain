@@ -7,6 +7,7 @@
 - [Sub-issue chronological order](feedback_subissue_chronological_order.md) — hard rule: sub-issues must be planned jointly for delivery order; new projects start with a planning spike (mixed: rule + a sequencing mistake it came from)
 - [Spike outcome rule](feedback_spike_outcome_rule.md) — spike resolves to new-complexity or no-new-complexity; latter closes the spike and opens a fresh ticket (mixed: rule + how it was learned)
 - [Idea routing](feedback_idea_routing.md) — future feature ideas go on the GitHub Ideas project board as an issue, not into memory
+- [Issue closure requires agreement](feedback_issue_closure_requires_agreement.md) — never word a PR/summary as "closing" an issue or use GitHub auto-close keywords until the user has agreed the PR resolves it
 
 ## Feedback — methodology (stated working practices, not corrections)
 
