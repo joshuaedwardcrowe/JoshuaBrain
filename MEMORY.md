@@ -16,6 +16,8 @@
 - [Issue title convention](methodology_issue_title_convention.md) — plain-language pre-WAG, Conventional Commits `type(scope):` once a spike carves out delivery sub-issues
 - [JoshuaBrain push policy](methodology_joshuabrain_push_policy.md) — commit and push memory changes to JoshuaBrain immediately, not periodically
 - [Four homes framework](methodology_four_homes_framework.md) — CAIRN (any team) / SoloCAIRN (any solo maintainer) / JoshuaBrain (personal only) / each repo's own CONTRIBUTING.md (binding, per-repo, incl. simulated-org infra)
+- [Traditional project board layout](methodology_traditional_project_board_layout.md) — delivery board Status pipeline Backlog→Done, Estimate, Priority High/Medium/Low (standardize #8's P0/P1/P2 outlier)
+- [Idea board layout](methodology_idea_board_layout.md) — Ideas board Status renamed to pipeline stages: New (pre-WAG)→WAG'd→SWAG'd/Prioritized→Released
 
 ## Project context — routed by which repo/ecosystem is active
 

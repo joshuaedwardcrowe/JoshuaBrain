@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-29T23:29:27.023Z
+  modified: 2026-07-30T06:20:39.638Z
 ---
 
 When deciding where a piece of process, convention, or knowledge should be written down, there are four distinct homes, not a blur between "personal" and "shared":
@@ -21,3 +21,8 @@ When deciding where a piece of process, convention, or knowledge should be writt
 Surfaced across several corrections in one session (2026-07-29/30): a "GitHub Issues as story artifact" decision nearly got written into SoloCAIRN itself (wrong — it's per-repo, not universal to all solo maintainers) and nearly left only in JoshuaBrain (also wrong — other contributors don't read that). A "KitCli idea" nearly ended up on Joshua's personal Ideas board (wrong — KitCli is a simulated independent org and needed its own board, since it's owned by the KitCli org, not Joshua personally). Each mistake was the same shape: collapsing two of the four homes into one.
 
 **How to apply:** Before writing any process/convention down, explicitly run it through the four-way test above rather than defaulting to "put it wherever feels closest." When in doubt, it's worth surfacing the ambiguity out loud rather than picking one silently — several of the corrections above only happened because the user caught a wrong placement after the fact, not because the test was applied up front. This memory file itself is an instance of the pattern: it and five siblings were originally filed as `feedback` (reactive correction) when they were really `methodology` (stated practice) — see the `subtype` field this and similar files now carry.
+
+Two cheap, mechanical tripwires catch most misses without re-deriving the four-way test from scratch each time (added 2026-07-30, after a feature idea got saved to memory instead of the GitHub Ideas board, and two new `methodology_*` files got typed `project` instead of `feedback`/`methodology`):
+
+- **Naming/type mismatch**: a file named `methodology_*` must carry `type: feedback` + `subtype: methodology`. If the filename and the metadata type disagree, stop and recheck — don't let the filename get chosen from one line of reasoning and the type from another.
+- **"Is this real work yet?" check**: if the content describes an idea, feature, or task that isn't yet WAG'd/scoped, it belongs on a GitHub Ideas board as an issue (see [[feedback_idea_routing]]), not in JoshuaBrain at all — memory is for durable context about how Joshua works, not a parking lot for backlog items.
