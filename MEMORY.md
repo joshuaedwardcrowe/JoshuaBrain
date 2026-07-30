@@ -25,7 +25,7 @@
 - [SpendfulnessCli issue tracking](project_spendfulnesscli_issue_tracking.md) — User Value/sub-issue/Estimate conventions; project #8 = analyse+CRUD commands
 - [KitCli vision](project_kitcli_vision.md) — conventions/extensibility framework like ASP.NET Web API or Umbraco
 - [SpendfulnessCli/KitCli split history](project_spendfulnesscli_kitcli_split_history.md) — old SpendfulnessCli issues can be misfiled framework concerns; migrate to KitCli, don't just triage locally
-- [Diagnosea CONTRIBUTING.md bootstrap](project_diagnosea_contributing_bootstrap.md) — not started; 8 repos, none have CONTRIBUTING.md, 2 are empty; read each repo's real structure first, don't copy another repo's conventions
+- [Diagnosea CONTRIBUTING.md bootstrap](project_diagnosea_contributing_bootstrap.md) — no repo has one (2 of 8 empty); task tracked as Submarine.Api#191 on Diagnosea's own Ideas board, not here
 
 ## References — pointers to external systems
 
