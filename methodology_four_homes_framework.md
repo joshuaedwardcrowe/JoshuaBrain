@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-30T21:40:18.870Z
+  modified: 2026-07-30T22:02:32.884Z
 ---
 
 When deciding where a piece of process, convention, or knowledge should be written down, there are four distinct homes, not a blur between "personal" and "shared":
@@ -32,3 +32,5 @@ Cheap, mechanical tripwires that catch most misses — but only if actually run,
 - **"Is this real work yet?" check**: if the content describes an idea, feature, or task that isn't yet WAG'd/scoped, it belongs on a GitHub Ideas board as an issue (see [[feedback_idea_routing]]), not in JoshuaBrain at all — memory is for durable context about how Joshua works, not a parking lot for backlog items.
 - **"Consistent across repos" is not the SoloCAIRN test**: wanting the same rule in every repo does not by itself mean SoloCAIRN is the right home — that's true of most JoshuaBrain `methodology_*` entries too. Before proposing an addition to SoloCAIRN specifically, actually re-read `docs/10-what-cairn-does-not-solve.md` and `docs/02-philosophy.md` in that repo rather than reasoning from the general shape of the rule.
 - **"Has this exact question been answered before?" check**: before presenting *any* four-homes placement as open (a question, a set of options), scan for an existing `methodology_*` memory covering the same shape of decision. "Canonical in JoshuaBrain + per-repo copy" is already the settled answer for cross-repo habits that must be contributor-visible — don't re-derive or re-ask it.
+
+Getting the placement right is necessary but not sufficient — see [[methodology_cross_repo_propagation]] for the separate failure mode of correctly landing something in JoshuaBrain but only actually applying it to the one repo that triggered it, leaving siblings out of sync until someone notices.
