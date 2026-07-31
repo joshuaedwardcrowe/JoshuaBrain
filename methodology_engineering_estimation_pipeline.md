@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-29T23:29:05.090Z
+  modified: 2026-07-31T23:26:57.051Z
 ---
 
 Before and during committing to build something, work runs through seven steps, documented in KitCli/YnabSharp/SpendfulnessCli's `CONTRIBUTING.md` Projects sections:
@@ -17,7 +17,7 @@ Before and during committing to build something, work runs through seven steps, 
 4. **Inception spike** — plans only the *next* milestone in real detail; everything beyond is a rough forecast, re-planned properly once actually reached (rolling-wave planning, not a full plan for the whole estimate up front). Refreshes the Ideas board's `Validated Estimate (months)` field as it's learned, not just once.
 5. **Backlog refinement, just-in-time** — only the next handful of tickets need full order + estimates at any moment; the rest of a milestone stays a loosely-ordered backlog, refined incrementally. A milestone-scale re-planning pass (formerly called a "milestone spike") is still useful when picking up a milestone cold, but its output is a starting point, not a fixed contract.
 6. **Fixed-length iterations + end-of-iteration review** — the inspect-and-adapt loop: check what got done vs. planned, re-prioritize the backlog, feed actual pace back into WAG/SWAG calibration. This is what makes the whole pipeline Agile rather than a Waterfall-style plan nobody revisits.
-7. **Tickets with Estimates** — leaf/actionable tickets pulled into an iteration get the Fibonacci `Estimate` field — see [[project_spendfulnesscli_issue_tracking]].
+7. **Tickets with Estimates** — leaf/actionable tickets pulled into an iteration get the Fibonacci `Estimate` field — see [[project_spendfulnesscli_issue_tracking]]. **A point captures effort, complexity, and risk *together*, not duration and not scope-breadth alone** — canonical wording in SoloCAIRN's `docs/03-lifecycle.md` "Sizing" section (also proposed upstream as [CAIRN#1](https://github.com/SiddiqueAbdullah/cairn/pull/1), open since 2026-07-29, so upstream CAIRN itself still sizes only in time). Novelty counts: work with no precedent in the codebase to copy carries real risk and that belongs *in* the number, not set aside from it. The `Estimate`'s value is the Maintainer's to set — see [[methodology_traditional_project_board_layout]] for the propose-vs-assign split.
 
 This process is deliberately Agile, not just Agile-flavored terminology — the earlier version (a single upfront estimate treated as a commitment, one big spike proving a whole milestone's order before starting) was Waterfall/stage-gate shaped despite the vocabulary. The four fixes that make it genuinely Agile: non-binding estimates, rolling-wave planning, just-in-time backlog refinement, and the added inspect-and-adapt iteration step.
 
