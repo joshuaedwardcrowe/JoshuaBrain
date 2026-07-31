@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-29T23:28:32.112Z
+  modified: 2026-07-31T22:39:14.436Z
 ---
 
 Three conventions for test code, applied across every repository, not
@@ -24,6 +24,19 @@ is the other cross-repo standing rule):
   wire format by hand — the fixture can't drift from the real shape,
   and a property rename breaks the build instead of silently
   invalidating the test.
+  - **Exception: tests whose entire purpose is checking a DTO against
+    an external wire-format spec.** Serializing the DTO with itself and
+    deserializing it back with the same DTO only proves the C# JSON
+    serializer round-trips with itself — it can't catch a wrong
+    `[JsonPropertyName]`/wrapper key/nullability, because the same
+    attributes govern both directions. This surfaced on YnabSharp PR
+    #117 / issue #120: no client test in that repo had ever checked a
+    DTO against YNAB's actual spec, only against itself. For this kind
+    of test, assert against the external spec/schema directly (e.g.
+    parse the vendored OpenAPI YAML) rather than the DTO's own
+    attributes — that's not the "hand-typed JSON literal" this rule is
+    guarding against, it's the one case where a real external oracle is
+    both available and the entire point of the test.
 - **Name test doubles `Test*`**, not `Stub*`/`Fake*`/`Mock*`.
 
 Apply these proactively by default when writing test code in any repo,
