@@ -23,6 +23,7 @@
 - [Docs folder layout](methodology_docs_folder_layout.md) — docs/{adr,concepts,reviews} w/ 0000-template.md applies to every repo incl. SpendfulnessCli; its flat ADR/+CONCEPTS.md is a gap, tracked as SpendfulnessCli#195
 - [PR mirrors issue metadata](methodology_pr_mirrors_issue_metadata.md) — PRs should carry their linked issue's labels/milestone, applied per-repo (not a SoloCAIRN rule) — across every repo
 - [Cross-repo propagation](methodology_cross_repo_propagation.md) — once a convention spans multiple repos, apply it to all of them in the same sitting, not just the one that triggered it
+- [Post plan to issue](methodology_post_plan_to_issue.md) — after plan mode approval, post the plan as an issue comment before coding; personal convention, lives in memory not CONTRIBUTING.md
 
 ## Project context — routed by which repo/ecosystem is active
 
