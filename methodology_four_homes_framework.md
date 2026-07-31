@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-30T22:02:32.884Z
+  modified: 2026-07-31T22:56:07.557Z
 ---
 
 When deciding where a piece of process, convention, or knowledge should be written down, there are four distinct homes, not a blur between "personal" and "shared":
@@ -26,11 +26,16 @@ The exact same shape recurred even with this memory already on file (2026-07-30,
 
 **How to apply:** Before writing any process/convention down, or before presenting a four-homes placement to the user as an open question, **first search existing `methodology_*`/`feedback_*` memory for a prior instance of the same shape of decision** — this is a blocking step, not a nice-to-have; the tripwires below existed in memory during the second recurrence and didn't stop it because they weren't actually consulted before acting. Only treat the placement as genuinely open if that search comes up empty. When it is genuinely open, surface the ambiguity out loud rather than picking one silently. This memory file itself is an instance of the broader pattern: it and five siblings were originally filed as `feedback` (reactive correction) when they were really `methodology` (stated practice) — see the `subtype` field this and similar files now carry.
 
+**Third occurrence, 2026-07-31 (YnabSharp#80/PR#117):** an issue was filed against SoloCAIRN proposing it cover project-board `Status` transitions — the same §1 "conventions and standards" exclusion that caused occurrence two, in the same doc. The scope file was never opened; it had only appeared in grep output twice. The recurrence count matters less than the mechanism, captured in the tripwire below.
+
 Cheap, mechanical tripwires that catch most misses — but only if actually run, not just stored (added 2026-07-30, after a feature idea got saved to memory instead of the GitHub Ideas board, and two new `methodology_*` files got typed `project` instead of `feedback`/`methodology`):
 
 - **Naming/type mismatch**: a file named `methodology_*` must carry `type: feedback` + `subtype: methodology`. If the filename and the metadata type disagree, stop and recheck — don't let the filename get chosen from one line of reasoning and the type from another.
 - **"Is this real work yet?" check**: if the content describes an idea, feature, or task that isn't yet WAG'd/scoped, it belongs on a GitHub Ideas board as an issue (see [[feedback_idea_routing]]), not in JoshuaBrain at all — memory is for durable context about how Joshua works, not a parking lot for backlog items.
-- **"Consistent across repos" is not the SoloCAIRN test**: wanting the same rule in every repo does not by itself mean SoloCAIRN is the right home — that's true of most JoshuaBrain `methodology_*` entries too. Before proposing an addition to SoloCAIRN specifically, actually re-read `docs/10-what-cairn-does-not-solve.md` and `docs/02-philosophy.md` in that repo rather than reasoning from the general shape of the rule.
+- **"Consistent across repos" is not the SoloCAIRN test**: wanting the same rule in every repo does not by itself mean SoloCAIRN is the right home — that's true of most JoshuaBrain `methodology_*` entries too. **Open and read `docs/10-what-cairn-does-not-solve.md` (and `docs/02-philosophy.md`) the moment CAIRN or SoloCAIRN first enters consideration as a home — not before proposing, and not before filing.** By proposal time the analysis is built and the issue body is drafted, so the check costs the most exactly when it fires; run it while the idea is still cheap to drop. Three specifics that keep defeating this:
+  - **Grep hits are not having read it.** A filename appearing in `grep -rln` output, or matched lines scrolling past, produces the feeling of having checked without any of the content. If the decision turns on scope, the file gets opened and read in full.
+  - **The boundary is written in category vocabulary, not mechanism vocabulary.** §1 excludes "project-level documentation... conventions and standards... repo-wide checklists." Grepping for the *mechanism* (`board`, `kanban`, `status field`, `label`, `milestone`) will return nothing and that silence is not evidence of absence — it means the query was pitched at the wrong level. Ask "what category is this?", then read the section that governs that category.
+  - **Every other check is confirming; this one is disconfirming.** "Does SoloCAIRN have a QA skill / an anti-pattern I can extend?" advances the plan and feels productive. "Is this in scope at all?" can only stop it, so it's the one that gets skipped under momentum. That asymmetry — not absent memory — is why this recurs.
 - **"Has this exact question been answered before?" check**: before presenting *any* four-homes placement as open (a question, a set of options), scan for an existing `methodology_*` memory covering the same shape of decision. "Canonical in JoshuaBrain + per-repo copy" is already the settled answer for cross-repo habits that must be contributor-visible — don't re-derive or re-ask it.
 
 Getting the placement right is necessary but not sufficient — see [[methodology_cross_repo_propagation]] for the separate failure mode of correctly landing something in JoshuaBrain but only actually applying it to the one repo that triggered it, leaving siblings out of sync until someone notices.
