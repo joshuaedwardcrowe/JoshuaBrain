@@ -9,6 +9,7 @@
 - [Idea routing](feedback_idea_routing.md) — future feature ideas go on the GitHub Ideas project board as an issue, not into memory
 - [Issue closure requires agreement](feedback_issue_closure_requires_agreement.md) — never word a PR/summary as "closing" an issue or use GitHub auto-close keywords until the user has agreed the PR resolves it
 - [PR review response triage](feedback_pr_review_response_triage.md) — sort review comments into fix/question/out-of-scope-idea and share the triage before editing any files
+- [Commit message describes change](feedback_commit_message_describes_change.md) — title the diff, never the process ("address review" banned) — across every repo
 
 ## Feedback — methodology (stated working practices, not corrections)
 
