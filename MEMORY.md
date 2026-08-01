@@ -11,6 +11,7 @@
 - [PR review response triage](feedback_pr_review_response_triage.md) — sort review comments into fix/question/out-of-scope-idea and share the triage before editing any files
 - [Commit message describes change](feedback_commit_message_describes_change.md) — title the diff, never the process ("address review" banned) — across every repo
 - [Check PR conventions before opening](feedback_check_pr_conventions_before_opening.md) — read the repo's PR template + a couple recent PRs before `gh pr create`, don't invent title/body format
+- [Use the gh stack extension](feedback_use_gh_stack_extension.md) — stacked PRs are a real GitHub feature with `gh stack` installed; never hand-chain `--base` (it adopts existing branches too)
 
 ## Feedback — methodology (stated working practices, not corrections)
 
