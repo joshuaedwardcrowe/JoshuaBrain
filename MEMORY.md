@@ -30,6 +30,7 @@
 ## Project context — routed by which repo/ecosystem is active
 
 - [SpendfulnessCli mission](project_spendfulnesscli_mission.md) — CLI's guiding mission is helping users be "spendful" per SPENDFULNESS.md's four-axis framework
+- [SpendfulnessCli reorganisation use-case](project_spendfulnesscli_reorganisation_usecase.md) — bulk re-org of categories/groups/transactions is milestone-level; user re-shuffles their budget every couple years
 - [SpendfulnessCli issue tracking](project_spendfulnesscli_issue_tracking.md) — User Value/sub-issue/Estimate conventions; project #8 = analyse+CRUD commands
 - [KitCli vision](project_kitcli_vision.md) — conventions/extensibility framework like ASP.NET Web API or Umbraco
 - [SpendfulnessCli/KitCli split history](project_spendfulnesscli_kitcli_split_history.md) — old SpendfulnessCli issues can be misfiled framework concerns; migrate to KitCli, don't just triage locally
