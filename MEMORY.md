@@ -12,6 +12,7 @@
 - [Commit message describes change](feedback_commit_message_describes_change.md) — title the diff, never the process ("address review" banned) — across every repo
 - [Check PR conventions before opening](feedback_check_pr_conventions_before_opening.md) — read the repo's PR template + a couple recent PRs before `gh pr create`, don't invent title/body format
 - [Use the gh stack extension](feedback_use_gh_stack_extension.md) — stacked PRs are a real GitHub feature with `gh stack` installed; never hand-chain `--base` (it adopts existing branches too)
+- [Refer to issues by title](feedback_refer_to_issues_by_title.md) — lead with the issue's title in conversation, never the bare number alone
 
 ## Feedback — methodology (stated working practices, not corrections)
 
