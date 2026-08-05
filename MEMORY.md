@@ -33,6 +33,7 @@
 - [Cross-repo propagation](methodology_cross_repo_propagation.md) — once a convention spans multiple repos, apply it to all of them in the same sitting, not just the one that triggered it
 - [Post plan to issue](methodology_post_plan_to_issue.md) — after plan mode approval, post the plan as an issue comment before coding; personal convention, lives in memory not CONTRIBUTING.md
 - [Docs-only direct to main](methodology_docs_only_direct_to_main.md) — docs-only changes skip the PR flow, across every repo including KitCli/YnabSharp now
+- [Documentation effort ceiling](methodology_documentation_effort_ceiling.md) — don't document more than you do; a doc can be dead on arrival, prefer the lightest mechanism that works
 
 ## Project context — routed by which repo/ecosystem is active
 
