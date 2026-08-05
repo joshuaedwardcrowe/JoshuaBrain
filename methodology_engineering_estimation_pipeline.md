@@ -6,13 +6,13 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-31T23:26:57.051Z
+  modified: 2026-08-05T10:21:28.178Z
 ---
 
 Before and during committing to build something, work runs through seven steps, documented in KitCli/YnabSharp/SpendfulnessCli's `CONTRIBUTING.md` Projects sections:
 
 1. **WAG** (Wild-Ass Guess) — a fast, rough gut-feel estimate (months), logged on the shared [Ideas board](https://github.com/users/joshuaedwardcrowe/projects/10)'s `WAG (months)` field. **Non-binding — expected to be wrong**, purely to judge whether an idea is worth pursuing at all.
-2. **SWAG** — the same estimate, re-checked against everything else competing for the slot, logged in the board's `SWAG (months)` field. Also non-binding — a relative sizing input for prioritization, not a plan. Prioritizing = sorting/grouping the board by `Priority` (`High`/`Medium`/`Low`) or `SWAG`, deliberately no separate roadmap artifact.
+2. **SWAG** — the same estimate, re-checked against everything else competing for the slot, logged in the board's `SWAG (months)` field. **Setting `Priority` (`High`/`Medium`/`Low`) is mandatory at this point — Status can't move to `SWAG'd / Prioritized` until it's set**, forcing an explicit call on how the idea stacks up against what's already prioritized (added 2026-08-05, YnabSharp#151 — see [[methodology_four_homes_framework]] for why this rule lives here and per-repo, not in CAIRN/SoloCAIRN: SoloCAIRN's own scope doc names prioritization as explicitly out of its scope). Otherwise non-binding — a relative sizing input for prioritization, not a plan. Prioritizing = sorting/grouping the board by `Priority` or `SWAG`, deliberately no separate roadmap artifact.
 3. **New GitHub Project** — once an idea is greenlit, it graduates off the Ideas board into its own project.
 4. **Inception spike** — plans only the *next* milestone in real detail; everything beyond is a rough forecast, re-planned properly once actually reached (rolling-wave planning, not a full plan for the whole estimate up front). Refreshes the Ideas board's `Validated Estimate (months)` field as it's learned, not just once.
 5. **Backlog refinement, just-in-time** — only the next handful of tickets need full order + estimates at any moment; the rest of a milestone stays a loosely-ordered backlog, refined incrementally. A milestone-scale re-planning pass (formerly called a "milestone spike") is still useful when picking up a milestone cold, but its output is a starting point, not a fixed contract.

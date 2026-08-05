@@ -28,6 +28,7 @@
 - [PR mirrors issue metadata](methodology_pr_mirrors_issue_metadata.md) — PRs should carry their linked issue's labels/milestone, applied per-repo (not a SoloCAIRN rule) — across every repo
 - [Cross-repo propagation](methodology_cross_repo_propagation.md) — once a convention spans multiple repos, apply it to all of them in the same sitting, not just the one that triggered it
 - [Post plan to issue](methodology_post_plan_to_issue.md) — after plan mode approval, post the plan as an issue comment before coding; personal convention, lives in memory not CONTRIBUTING.md
+- [Docs-only direct to main](methodology_docs_only_direct_to_main.md) — docs-only changes skip the PR flow, across every repo including KitCli/YnabSharp now
 
 ## Project context — routed by which repo/ecosystem is active
 
