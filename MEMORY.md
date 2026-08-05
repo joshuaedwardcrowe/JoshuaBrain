@@ -15,6 +15,7 @@
 - [Refer to issues by title](feedback_refer_to_issues_by_title.md) — lead with the issue's title in conversation, never the bare number alone
 - [No self-moving status gates](feedback_no_self_moving_status_gates.md) — never move a Status field past a human-verification value (In QA, Done, etc.) yourself; attach evidence, let the human move it
 - [Spike scope assumption](feedback_spike_scope_assumption.md) — a spike's write-up needs implementation-level resolution, not a verdict; canonical text lives in SoloCAIRN PR#21, not here
+- [CAIRN/SoloCAIRN docs terse register](feedback_cairn_docs_terse_register.md) — match their light-touch, single-clause style; edit the smallest span of an existing sentence, don't add explanatory paragraphs
 
 ## Feedback — methodology (stated working practices, not corrections)
 
