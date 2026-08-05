@@ -6,15 +6,16 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: f401e5ac-4951-45c1-93a4-68d32a637226
-  modified: 2026-07-30T06:38:46.019Z
+  modified: 2026-08-05T15:10:44.615Z
 ---
 
 Confirmed directly against the repos (2026-07-30) rather than assumed — two distinct layouts exist, not one universal convention:
 
-**Current standard — YnabSharp, KitCli:** a `docs/` folder containing three subfolders:
+**Current standard — YnabSharp, KitCli, SpendfulnessCli:** a `docs/` folder containing four subfolders:
 - `docs/adr/` — sequentially numbered ADRs (`0001-title.md`), seeded with a `0000-template.md`
 - `docs/concepts/` — one file per concept, topic-named (not numbered), also seeded with a `0000-template.md`
-- `docs/reviews/` — dated architectural reviews (`YYYY-MM-DD-architectural-review.md`)
+- `docs/reviews/` — dated, multi-finding architectural reviews (`YYYY-MM-DD-architectural-review.md`), not single-topic write-ups
+- `docs/investigations/` — sequentially numbered (`0001-question.md`), seeded with a `0000-template.md`; what a technical spike produces, ships via PR with a Status. Added to SpendfulnessCli 2026-08-02 (#199) but not propagated to YnabSharp/KitCli until 2026-08-05 — a real cross-repo-propagation miss, not an intentional gap. See [[methodology_cross_repo_propagation]].
 
 Repos add their own extra reference material directly under `docs/` alongside these three (YnabSharp: `ynab-api-coverage.md`, `ynab-openapi-spec.yaml`; KitCli: `dependency-graph.drawio`/`.png`, `operating-model-rollout-status.md`).
 

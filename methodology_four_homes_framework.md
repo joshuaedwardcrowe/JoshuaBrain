@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-08-05T14:38:29.133Z
+  modified: 2026-08-05T15:10:53.331Z
 ---
 
 When deciding where a piece of process, convention, or knowledge should be written down, there are four distinct homes, not a blur between "personal" and "shared":
@@ -40,5 +40,6 @@ Cheap, mechanical tripwires that catch most misses — but only if actually run,
   - **Every other check is confirming; this one is disconfirming.** "Does SoloCAIRN have a QA skill / an anti-pattern I can extend?" advances the plan and feels productive. "Is this in scope at all?" can only stop it, so it's the one that gets skipped under momentum. That asymmetry — not absent memory — is why this recurs.
 - **"Has this exact question been answered before?" check**: before presenting *any* four-homes placement as open (a question, a set of options), scan for an existing `methodology_*` memory covering the same shape of decision. "Canonical in JoshuaBrain + per-repo copy" is already the settled answer for cross-repo habits that must be contributor-visible — don't re-derive or re-ask it.
 - **"Is it already in flight?" check** (2026-08-05): also run `gh pr list --repo <cairn-repo> --state all --search '<topic>'` on both cairn repos — merged docs being silent isn't proof nobody's already proposed it.
+- **"Does a sibling repo already have this?" check** (2026-08-05): before re-deriving a convention, grep the other repos' own `CONTRIBUTING.md`s — `docs/investigations/` existed in SpendfulnessCli three days before it got re-derived for SoloCAIRN#21 from scratch.
 
 Getting the placement right is necessary but not sufficient — see [[methodology_cross_repo_propagation]] for the separate failure mode of correctly landing something in JoshuaBrain but only actually applying it to the one repo that triggered it, leaving siblings out of sync until someone notices.
