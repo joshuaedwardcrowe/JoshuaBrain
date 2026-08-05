@@ -16,6 +16,7 @@
 - [No self-moving status gates](feedback_no_self_moving_status_gates.md) — never move a Status field past a human-verification value (In QA, Done, etc.) yourself; attach evidence, let the human move it
 - [Spike scope assumption](feedback_spike_scope_assumption.md) — a spike's write-up needs implementation-level resolution, not a verdict; canonical text lives in SoloCAIRN PR#21, not here
 - [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, everywhere; cut when flagged, don't rephrase-and-shorten
+- [No personal examples in generic docs](feedback_no_personal_examples_in_generic_docs.md) — abstract real personal details before they go into a methodology doc like SPENDFULNESS.md, even mundane ones
 
 ## Feedback — methodology (stated working practices, not corrections)
 
