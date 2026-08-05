@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-07-31T22:56:07.557Z
+  modified: 2026-08-05T10:59:12.312Z
 ---
 
 When deciding where a piece of process, convention, or knowledge should be written down, there are four distinct homes, not a blur between "personal" and "shared":
@@ -14,7 +14,7 @@ When deciding where a piece of process, convention, or knowledge should be writt
 1. **CAIRN** (upstream, Abdullah Siddique's) — universal to *any staffed team*, not solo-specific.
 2. **SoloCAIRN** (the fork) — universal to *any solo maintainer* doing AI-assisted work, not specific to Joshua's own taste.
 3. **JoshuaBrain** — Joshua's own personal preferences and working style. Not binding on anyone else, including other contributors to his own repos.
-4. **Each individual repo's own `CONTRIBUTING.md`** — the actual binding, shared contract for anyone (including Joshua) contributing to that specific repo. This applies per-repo, not per-"ecosystem" — and orgs meant to operate as independent simulated organizations (KitCli, Diagnosea) get their *own* infrastructure (their own Ideas board, their own CONTRIBUTING.md) rather than sharing Joshua's personal-account one, even though Joshua owns/runs them. Repos under Joshua's own personal account that aren't simulated orgs (SpendfulnessCli, YnabSharp) can reasonably share personal-account infrastructure like the Ideas board.
+4. **Each individual repo's own `CONTRIBUTING.md`** — the actual binding, shared contract for anyone (including Joshua) contributing to that specific repo. This applies per-repo, not per-"ecosystem" — and orgs meant to operate as independent simulated organizations (KitCli, Diagnosea) get their *own* infrastructure (their own Ideas board, their own CONTRIBUTING.md) rather than sharing Joshua's personal-account one, even though Joshua owns/runs them. Repos under Joshua's own personal account that aren't simulated orgs (SpendfulnessCli, YnabSharp) briefly shared one personal-account Ideas board, but that collapsed the same way KitCli sharing Joshua's board would have — see [[methodology_idea_board_layout]]: every repo, personal-account or org-owned, gets its own Ideas board by default now, with a separate shared board reserved only for ideas that don't pertain to any single repo.
 
 **The test for each:** would this apply to any team, anywhere (→ CAIRN)? Any solo maintainer, not just Joshua (→ SoloCAIRN)? Is it genuinely just how Joshua personally likes to work, not something another contributor needs to follow (→ JoshuaBrain)? Does it need to be binding for anyone contributing to *this specific repo/org* (→ that repo's own CONTRIBUTING.md, and if the org is a simulated independent organization, its own boards/infra too, not Joshua's personal ones)?
 
