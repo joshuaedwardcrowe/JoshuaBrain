@@ -14,6 +14,7 @@
 - [Use the gh stack extension](feedback_use_gh_stack_extension.md) — stacked PRs are a real GitHub feature with `gh stack` installed; never hand-chain `--base` (it adopts existing branches too)
 - [Refer to issues by title](feedback_refer_to_issues_by_title.md) — lead with the issue's title in conversation, never the bare number alone
 - [No self-moving status gates](feedback_no_self_moving_status_gates.md) — never move a Status field past a human-verification value (In QA, Done, etc.) yourself; attach evidence, let the human move it
+- [Spike scope assumption](feedback_spike_scope_assumption.md) — assume a spike finding reshapes the whole build/plan by default, not just the one ticket that seemed to be waiting on it
 
 ## Feedback — methodology (stated working practices, not corrections)
 
