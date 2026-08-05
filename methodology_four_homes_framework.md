@@ -6,7 +6,7 @@ metadata:
   type: feedback
   subtype: methodology
   originSessionId: 681f9a31-eb28-4ccf-8913-2eb0f7bd2929
-  modified: 2026-08-05T10:59:12.312Z
+  modified: 2026-08-05T11:49:43.001Z
 ---
 
 When deciding where a piece of process, convention, or knowledge should be written down, there are four distinct homes, not a blur between "personal" and "shared":
@@ -28,6 +28,8 @@ The exact same shape recurred even with this memory already on file (2026-07-30,
 
 **Third occurrence, 2026-07-31 (YnabSharp#80/PR#117):** an issue was filed against SoloCAIRN proposing it cover project-board `Status` transitions — the same §1 "conventions and standards" exclusion that caused occurrence two, in the same doc. The scope file was never opened; it had only appeared in grep output twice. The recurrence count matters less than the mechanism, captured in the tripwire below.
 
+**Fourth occurrence, 2026-08-05 (spike-scope-assumption memory):** filed a new JoshuaBrain memory about how spikes should be scoped/found-to-be-broad, reasoning "SoloCAIRN's spike concept is different and lighter, so this is personal" — based on reading `docs/03-lifecycle.md` and `10-what-cairn-does-not-solve.md` on **merged `main`**. Both were clean, so the conclusion felt solid. It was wrong: [SiddiqueAbdullah/cairn#2](https://github.com/SiddiqueAbdullah/cairn/pull/2) (adds a "technical spike" row, the original Beck/Cunningham meaning) and [SoloCAIRN#21](https://github.com/joshuaedwardcrowe/SoloCAIRN/pull/21) (requires a spike's finding to be written down, since SoloCAIRN has no pair/team to retain it tacitly) were **both already open** at the time, staging exactly this concept. Reading merged docs and concluding "not covered" is not the same check as reading open PRs — a concept can be recognized as CAIRN/SoloCAIRN-general and mid-flight toward landing there while `main` still looks silent on it. **New tripwire, folded into the mechanical list below: when CAIRN or SoloCAIRN enters consideration as a home, check open PRs (`gh pr list --repo <cairn-repo> --state all --search '<topic>'`) in addition to reading the docs on `main` — "the docs don't mention it" and "nobody's already working on landing it" are different claims.**
+
 Cheap, mechanical tripwires that catch most misses — but only if actually run, not just stored (added 2026-07-30, after a feature idea got saved to memory instead of the GitHub Ideas board, and two new `methodology_*` files got typed `project` instead of `feedback`/`methodology`):
 
 - **Naming/type mismatch**: a file named `methodology_*` must carry `type: feedback` + `subtype: methodology`. If the filename and the metadata type disagree, stop and recheck — don't let the filename get chosen from one line of reasoning and the type from another.
@@ -37,5 +39,6 @@ Cheap, mechanical tripwires that catch most misses — but only if actually run,
   - **The boundary is written in category vocabulary, not mechanism vocabulary.** §1 excludes "project-level documentation... conventions and standards... repo-wide checklists." Grepping for the *mechanism* (`board`, `kanban`, `status field`, `label`, `milestone`) will return nothing and that silence is not evidence of absence — it means the query was pitched at the wrong level. Ask "what category is this?", then read the section that governs that category.
   - **Every other check is confirming; this one is disconfirming.** "Does SoloCAIRN have a QA skill / an anti-pattern I can extend?" advances the plan and feels productive. "Is this in scope at all?" can only stop it, so it's the one that gets skipped under momentum. That asymmetry — not absent memory — is why this recurs.
 - **"Has this exact question been answered before?" check**: before presenting *any* four-homes placement as open (a question, a set of options), scan for an existing `methodology_*` memory covering the same shape of decision. "Canonical in JoshuaBrain + per-repo copy" is already the settled answer for cross-repo habits that must be contributor-visible — don't re-derive or re-ask it.
+- **"Is it already in flight?" check** (added 2026-08-05, fourth occurrence): reading CAIRN/SoloCAIRN docs on merged `main` and finding nothing is not the same claim as "nobody's already proposed this." Run `gh pr list --repo <the relevant cairn repo> --state all --search '<topic>'` on both `SiddiqueAbdullah/cairn` and `joshuaedwardcrowe/SoloCAIRN` before concluding a concept is JoshuaBrain-only or genuinely new — an open, not-yet-merged PR can already be staging exactly the thing about to be re-invented downstream.
 
 Getting the placement right is necessary but not sufficient — see [[methodology_cross_repo_propagation]] for the separate failure mode of correctly landing something in JoshuaBrain but only actually applying it to the one repo that triggered it, leaving siblings out of sync until someone notices.
