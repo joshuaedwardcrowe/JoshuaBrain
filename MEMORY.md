@@ -18,6 +18,7 @@
 - [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, everywhere; cut when flagged, don't rephrase-and-shorten
 - [No personal examples in generic docs](feedback_no_personal_examples_in_generic_docs.md) — abstract real personal details before they go into a methodology doc like SPENDFULNESS.md, even mundane ones
 - [No process without a consumer](feedback_no_process_without_a_consumer.md) — name the decision a velocity/iteration/report/field feeds and who makes it; no consumer, don't add it
+- [Batch GitHub Project writes](feedback_batch_github_project_writes.md) — one aliased GraphQL request, never a `gh project item-edit` loop; per-item CLI calls spend both core and graphql budget
 
 ## Feedback — methodology (stated working practices, not corrections)
 
