@@ -24,7 +24,7 @@
 
 - [PR size limit](methodology_pr_size_limit.md) — max 20 files per PR (10-15 preferred), across every repo, plan splits upfront
 - [Test code conventions](methodology_test_code_conventions.md) — reusable test doubles, serialize real DTOs not raw JSON, name doubles Test* — across every repo
-- [Engineering estimation pipeline](methodology_engineering_estimation_pipeline.md) — WAG (worth pursuing?) → SWAG (prioritize) → inception spike (validates estimate, sets milestones) → per-issue Estimates
+- [Engineering estimation pipeline](methodology_engineering_estimation_pipeline.md) — WAG (worth pursuing?) → SWAG (prioritize) → inception spike (validates estimate, sets milestones) → per-issue Estimates; old WAGs/SWAGs are never revised
 - [Issue title convention](methodology_issue_title_convention.md) — plain-language pre-WAG, Conventional Commits `type(scope):` once a spike carves out delivery sub-issues
 - [JoshuaBrain push policy](methodology_joshuabrain_push_policy.md) — commit and push memory changes to JoshuaBrain immediately, not periodically
 - [Four homes framework](methodology_four_homes_framework.md) — CAIRN (any team) / SoloCAIRN (any solo maintainer) / JoshuaBrain (personal only) / each repo's own CONTRIBUTING.md (binding, per-repo, incl. simulated-org infra)

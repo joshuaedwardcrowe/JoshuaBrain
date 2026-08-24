@@ -21,4 +21,18 @@ Before and during committing to build something, work runs through seven steps, 
 
 This process is deliberately Agile, not just Agile-flavored terminology — the earlier version (a single upfront estimate treated as a commitment, one big spike proving a whole milestone's order before starting) was Waterfall/stage-gate shaped despite the vocabulary. The four fixes that make it genuinely Agile: non-binding estimates, rolling-wave planning, just-in-time backlog refinement, and the added inspect-and-adapt iteration step.
 
-**How to apply:** Don't treat a WAG, SWAG, or inception-spike estimate as a commitment — they're inputs to prioritization, expected to be revised. Don't plan a whole milestone's ticket order in one big spike; only the next few tickets need full ordering at any time. Always include the end-of-iteration inspect-and-adapt step when describing or executing this process — it's the part that makes the difference between this being Agile and being Waterfall with Agile vocabulary borrowed on top. See [[feedback_subissue_chronological_order]] for how ordering gets planned jointly rather than solo.
+**Historical WAGs and SWAGs are never revised.** A stale estimate stays
+stale — its value is retrospective calibration, showing how wrong a past gut-feel turned out to
+be, not an accurate record of scope. Stated by the user 2026-08-24 (KitCli#136), on seeing a
+shared-Ideas card carrying a 1-month WAG for a Claude↔YNAB connector: *"we don't change old ones,
+we use them to see how ridiculous they were."* This is the **idea-stage counterpart** to
+SoloCAIRN's delivery-stage rule in `docs/03-lifecycle.md` ("Re-estimating"): *"Don't re-estimate
+after the fact based on how long it actually took — that feeds velocity, an aggregate,
+forward-looking calibration, not a rewrite of one ticket's history."* SoloCAIRN covers story
+points only and says nothing about WAG/SWAG, because prioritization is explicitly out of its
+scope — which is why this half lives here rather than there (see [[methodology_four_homes_framework]]).
+Upstream CAIRN has neither: verified 2026-08-24, its `docs/03-lifecycle.md` has zero mentions of
+estimation, sizing, points, velocity or calibration, and [CAIRN#1](https://github.com/SiddiqueAbdullah/cairn/pull/1)
+(the Fibonacci proposal) is still open.
+
+**How to apply:** Don't treat a WAG, SWAG, or inception-spike estimate as a commitment — they're inputs to prioritization, expected to be revised. Don't plan a whole milestone's ticket order in one big spike; only the next few tickets need full ordering at any time. Always include the end-of-iteration inspect-and-adapt step when describing or executing this process — it's the part that makes the difference between this being Agile and being Waterfall with Agile vocabulary borrowed on top. Never rewrite a historical WAG/SWAG to match what was learned later — record the new figure at the next gate and leave the earlier one visible beside it. See [[feedback_subissue_chronological_order]] for how ordering gets planned jointly rather than solo.
