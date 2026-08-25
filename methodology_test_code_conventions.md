@@ -23,7 +23,9 @@ is the other cross-repo standing rule):
     the same fixture — stated 2026-08-25 on KitCli PR#154, where a
     `TestOutcomePayloads.cs` carrying five doubles was split into
     `TestAggregate`, `TestAggregator`, `TestTableBuilder`,
-    `TestCliCommandReaction` and `TestNextCliCommand`.
+    `TestCliCommandReaction` and `TestNextCliCommand`. This one stays a
+    JoshuaBrain preference — do not write it into any repo's
+    `CONTRIBUTING.md`, per [[methodology_four_homes_framework]].
 - **Serialize real DTOs instead of hand-writing JSON/data string
   literals** for canned fixture bodies. Construct the actual
   response/request type and serialize it, rather than typing out the
