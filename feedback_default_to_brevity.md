@@ -18,4 +18,6 @@ Applies with extra force inside CAIRN/SoloCAIRN docs specifically: they're alrea
 
 Same failure in conversation: opening with process archaeology — what a doc says, what precedent exists, what the four homes imply — before naming the concrete thing being decided. "I dont understand" (2026-08-25) followed three layered paragraphs where a four-row table of issue → action → why would have done it. Lead with the decision; put the reasoning under it.
 
+**Recurred a fourth time on 2026-08-25** — a thirty-line CHANGELOG entry where `CONTRIBUTING.md` said "a line", hours after the investigation-0003 flag above. The fix was not more wording: this guidance lives in a file that is only loaded as a one-line summary in `MEMORY.md`, so it is not in context at the moment of writing. It is now also a path-scoped rule at `~/.claude/rules/writing-markdown.md` (`paths: **/*.md`), which loads automatically whenever a markdown file is touched, in any repo. Keep the two in step; this file stays the full reasoning.
+
 **How to apply:** Before sending anything, ask if it's the shortest version that still lands. First fix for "too long" is deletion, not a better sentence. Hard cap given 2026-08-05: chat replies ~2 sentences unless the user asks for more (e.g. explicit option lists) — "why do you write in war and peace."
