@@ -11,13 +11,17 @@ metadata:
 
 Once an idea graduates off the [Ideas board](https://github.com/users/joshuaedwardcrowe/projects/10) into its own GitHub Project (step 3 of [[methodology_engineering_estimation_pipeline]]), that delivery board follows a standard layout, confirmed 2026-07-30 against Spendfulness (#9), YnabSharp API Coverage (#11), and YNAB Analysis & Automation (#8):
 
-- **Status** (single-select, 7 stages): `Backlog → To Do → In Development → In Review → In QA → Ready for Release → Done`
+- **Status** (single-select): `Backlog → To Do → In Development → In Review → In QA → Ready for Release → Done`, plus a second terminal value `Not Required` (red) for work closed as not planned
 - **Estimate**: Fibonacci points per ticket, per [[project_spendfulnesscli_issue_tracking]]
 - **Priority** (single-select): `High / Medium / Low`
 
 **Why:** #8 (YNAB Analysis & Automation) currently uses `P0/P1/P2` instead of `High/Medium/Low` — an inconsistency, not an intentional variant. `High/Medium/Low` was chosen as the standard because it matches both #9 and #11, and also matches the Priority field already used on the Ideas board itself, so the vocabulary is consistent from WAG stage through delivery.
 
 **How to apply:** New delivery boards should be created with this layout from the start. #8 should be reconciled to `High/Medium/Low` when next touched (not urgent enough alone to warrant a one-off migration pass). Milestones on these boards are named per [[feedback_milestone_naming_convention]].
+
+**`Not Required` is the board's second terminal value, parallel to `Done` rather than a stage before it.** A card closed as not planned is not `Done` — nothing was delivered — and leaving it at `Backlog` makes dropped work read as queued work. Set it whenever an issue is closed with GitHub's `NOT_PLANNED` state reason; the two belong together, since a board's table view shows closed items and does not surface the issue's close reason.
+
+**How to apply:** added 2026-08-25 to all seven KitCli delivery boards (Packaging #2, Instructions #3, Outcomes #5, Workflow #6, Commands #9, Artefacts #10, Tooling & Docs #11). The `joshuaedwardcrowe` delivery boards (#8, #9, #11) do not have it yet — add it when one of them is next touched, per [[methodology_cross_repo_propagation]]. Adding an option to a live board is destructive: read [[reference_project_field_option_edits_wipe_values]] first.
 
 **These are gates, not just column labels — move the card at each transition as the real work happens, or the board goes stale silently.** Generic triggers (a specific repo's `CONTRIBUTING.md` should translate these into its own conventions, e.g. YnabSharp's version references its PR-label-mirroring rule): `Backlog`→`To Do` on pulling into an iteration + setting `Estimate`; →`In Development` on first commit/branch; →`In Review` on opening the PR; →`In QA` once review threads are resolved and CI is green; →`Done` on merge (the default landing spot — `Ready for Release` is only for a deliberate hold, e.g. a batched release, not a mandatory stop).
 

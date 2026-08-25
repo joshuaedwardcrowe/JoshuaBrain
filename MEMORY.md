@@ -28,7 +28,7 @@
 - [Issue title convention](methodology_issue_title_convention.md) — plain-language pre-WAG, Conventional Commits `type(scope):` once a spike carves out delivery sub-issues
 - [JoshuaBrain push policy](methodology_joshuabrain_push_policy.md) — commit and push memory changes to JoshuaBrain immediately, not periodically
 - [Four homes framework](methodology_four_homes_framework.md) — CAIRN (any team) / SoloCAIRN (any solo maintainer) / JoshuaBrain (personal only) / each repo's own CONTRIBUTING.md (binding, per-repo, incl. simulated-org infra)
-- [Traditional project board layout](methodology_traditional_project_board_layout.md) — delivery board Status pipeline Backlog→Done, Estimate, Priority High/Medium/Low (standardize #8's P0/P1/P2 outlier)
+- [Traditional project board layout](methodology_traditional_project_board_layout.md) — delivery board Status pipeline Backlog→Done plus terminal Not Required, Estimate, Priority High/Medium/Low (standardize #8's P0/P1/P2 outlier)
 - [Idea board layout](methodology_idea_board_layout.md) — every repo gets its own Ideas board by default; shared board (#10) only for ideas that don't pertain to one repo; SoloCAIRN has no board
 - [Docs folder layout](methodology_docs_folder_layout.md) — docs/{adr,concepts,reviews} w/ 0000-template.md applies to every repo incl. SpendfulnessCli; its flat ADR/+CONCEPTS.md is a gap, tracked as SpendfulnessCli#195
 - [PR mirrors issue metadata](methodology_pr_mirrors_issue_metadata.md) — PRs should carry their linked issue's labels/milestone, applied per-repo (not a SoloCAIRN rule) — across every repo
@@ -48,5 +48,6 @@
 
 ## References — pointers to external systems
 
+- [Project field option edits wipe values](reference_project_field_option_edits_wipe_values.md) — updateProjectV2Field regenerates every option id and blanks the board; snapshot first, recover from issue timelines
 - [SoloCAIRN](https://github.com/joshuaedwardcrowe/SoloCAIRN) — fork of Abdullah Siddique's CAIRN, adapted for solo/AI-assisted delivery; the ecosystem's Build-stage methodology
 - [JoshuaBrain](https://github.com/joshuaedwardcrowe/JoshuaBrain) — this memory, git-backed (this repo itself)
