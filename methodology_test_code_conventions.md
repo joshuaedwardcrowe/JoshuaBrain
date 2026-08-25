@@ -18,6 +18,12 @@ is the other cross-repo standing rule):
   `// TODO: Write unit tests.` marker (or similar), that's a signal more
   tests of the same shape are coming — put the double in a shared
   test-helpers location the first time, not the second.
+  - **One file per double**, named after it. A `TestHelpers/` file
+    holding several doubles is wrong even when they are all payloads for
+    the same fixture — stated 2026-08-25 on KitCli PR#154, where a
+    `TestOutcomePayloads.cs` carrying five doubles was split into
+    `TestAggregate`, `TestAggregator`, `TestTableBuilder`,
+    `TestCliCommandReaction` and `TestNextCliCommand`.
 - **Serialize real DTOs instead of hand-writing JSON/data string
   literals** for canned fixture bodies. Construct the actual
   response/request type and serialize it, rather than typing out the
