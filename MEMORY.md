@@ -1,21 +1,21 @@
 ## Feedback — reactive corrections (a specific mistake, don't repeat it)
 
 - [Permission prompts](feedback_permission_prompts.md) — discuss adding a permanent allow rule instead of re-prompting; check for a phrasing fix first
-- [PR comment audit](feedback_pr_comment_audit.md) — check both pulls/comments (inline) and issues/comments (top-level) endpoints, not just one
+- [PR comment audit](feedback_pr_comment_audit.md) — check both pulls/comments (inline) and issues/comments (top-level) endpoints, and always before merging
 - [Memory editing style](feedback_memory_editing_style.md) — rewrite corrected facts as clean current-state snapshots, no correction narrative
 - [Milestone naming convention](feedback_milestone_naming_convention.md) — name after the external spec/version (e.g. `YNAB API v1.86.0`), not a goal description
 - [Sub-issue chronological order](feedback_subissue_chronological_order.md) — hard rule: sub-issues must be planned jointly for delivery order; new projects start with a planning spike (mixed: rule + a sequencing mistake it came from)
-- [Spike outcome rule](feedback_spike_outcome_rule.md) — spike resolves to new-complexity or no-new-complexity; latter closes the spike and opens a fresh ticket (mixed: rule + how it was learned)
+- [Spike outcome rule](feedback_spike_outcome_rule.md) — verdict asks whether the work is as small as the issue assumed; no-new-complexity closes into a fresh ticket, new-complexity keeps the parent open with sub-issues
 - [Idea routing](feedback_idea_routing.md) — future feature ideas go on that repo's own GitHub Ideas board as an issue, not into memory
 - [Issue closure requires agreement](feedback_issue_closure_requires_agreement.md) — never word a PR/summary as "closing" an issue or use GitHub auto-close keywords until the user has agreed the PR resolves it
 - [PR review response triage](feedback_pr_review_response_triage.md) — sort review comments into fix/question/out-of-scope-idea and share the triage before editing any files
 - [Commit message describes change](feedback_commit_message_describes_change.md) — title the diff, never the process ("address review" banned) — across every repo
-- [Check PR conventions before opening](feedback_check_pr_conventions_before_opening.md) — read the repo's PR template + a couple recent PRs before `gh pr create`, don't invent title/body format
+- [Check PR conventions before opening](feedback_check_pr_conventions_before_opening.md) — read the repo's CONTRIBUTING + template before `gh pr create` *or* before filing/routing an issue, don't invent the format or the route
 - [Use the gh stack extension](feedback_use_gh_stack_extension.md) — stacked PRs are a real GitHub feature with `gh stack` installed; never hand-chain `--base` (it adopts existing branches too)
 - [Refer to issues by title](feedback_refer_to_issues_by_title.md) — lead with the issue's title in conversation, never the bare number alone
 - [No self-moving status gates](feedback_no_self_moving_status_gates.md) — never move a Status field past a human-verification value (In QA, Done, etc.) yourself; attach evidence, let the human move it
 - [Spike scope assumption](feedback_spike_scope_assumption.md) — a spike's write-up needs implementation-level resolution, not a verdict; canonical text lives in SoloCAIRN PR#21, not here
-- [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, everywhere; cut when flagged, don't rephrase-and-shorten
+- [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, but dense is not clear: cut words, never the connective tissue; lead with the decision, not the archaeology
 - [No personal examples in generic docs](feedback_no_personal_examples_in_generic_docs.md) — abstract real personal details before they go into a methodology doc like SPENDFULNESS.md, even mundane ones
 - [No process without a consumer](feedback_no_process_without_a_consumer.md) — name the decision a velocity/iteration/report/field feeds and who makes it; no consumer, don't add it
 - [Batch GitHub Project writes](feedback_batch_github_project_writes.md) — one aliased GraphQL request, never a `gh project item-edit` loop; per-item CLI calls spend both core and graphql budget
