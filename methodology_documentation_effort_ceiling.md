@@ -12,4 +12,8 @@ Don't let documentation effort exceed the effort of the work it describes. A doc
 
 **Why:** Stated directly 2026-08-05, mid-discussion on whether to add a `docs/ticket-planning` convention on top of the investigations one added the same session.
 
+**Restating a rule you broke does not enforce it.** When work violates a convention that was already written down, the failure was reading it, not wording it — and adding words to the same doc changes nothing about whether it gets read next time. Revert the addition, say plainly that the existing rule already covered it, and if the miss is worth preventing, propose a *mechanism* (a CI check, a template field) rather than more prose. Only add wording when the rule genuinely was not there.
+
+**Why:** caught 2026-08-25 on KitCli #151. CONTRIBUTING said every PR "gets a line in CHANGELOG.md"; I wrote a thirty-line entry, then, when told changelogs should be plain-language, added a six-line tone rule to that same section — including an audience fact ("the `[Unreleased]` notes become the GitHub Release body") already stated twenty lines below it. The user's objection: more wording will not protect against a doc I did not read in the first place.
+
 **How to apply:** Before proposing a new doc type/folder, check if the lightest mechanism already covers it — e.g. propose-in-chat-then-create (used for #151's ADR ticket) instead of a new PR-reviewed doc convention. Reach for a durable doc only once the lighter version is shown to not be enough, the way investigations was — SpendfulnessCli's version had already been used, not just proposed.
