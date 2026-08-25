@@ -20,6 +20,7 @@
 - [No process without a consumer](feedback_no_process_without_a_consumer.md) — name the decision a velocity/iteration/report/field feeds and who makes it; no consumer, don't add it
 - [Names over why-comments](feedback_names_over_why_comments.md) — no inline why-comments ever; put it in a name, or a `///` doc comment above the object
 - [Batch GitHub Project writes](feedback_batch_github_project_writes.md) — one aliased GraphQL request, never a `gh project item-edit` loop; per-item CLI calls spend both core and graphql budget
+- [Search issues before proposing](feedback_search_issues_before_proposing.md) — an existing spike issue sets the doc type and the verdict format; check before writing a design doc
 
 ## Feedback — methodology (stated working practices, not corrections)
 
