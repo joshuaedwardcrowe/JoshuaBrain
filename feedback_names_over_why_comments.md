@@ -1,6 +1,6 @@
 ---
 name: feedback_names_over_why_comments
-description: "Encode a 'why' comment in a name before writing it as a comment — a named local, method or test name usually carries it"
+description: "Never write a 'why' comment inline — put it in a name, or in a documentation comment above the type or method"
 metadata:
   node_type: memory
   type: feedback
@@ -26,4 +26,11 @@ Assert.That(itsParameterlessConstructor, Is.Null);
 
 **Why:** 2026-08-25, KitCli PR#154 — "Code should be self documenting. Remove the comment, make the code self-documenting." Four lines of comment were doing work two names did better. Related: [[feedback_default_to_brevity]], since the first fix for too much prose is deletion, not rephrasing.
 
-**How to apply:** Before writing a `//` explaining intent, ask what the thing would have to be *called* for the comment to be unnecessary. Extract a local or a method to get that name. A comment still earns its place when it records something no name can hold — a language behaviour that surprises, an external constraint, a decision recorded elsewhere — and then it should be one line, not four. Prose that belongs to a decision goes in the ADR, not above the code.
+**An inline `//` explaining why should never exist.** There are two places for the explanation:
+
+- **A name.** Ask what the thing would have to be *called* for the comment to be unnecessary, then extract a local or a method to get that name.
+- **A documentation comment** — `/// <summary>` — above the class, record, method or test it describes. This is the wanted form, and where a longer explanation belongs.
+
+Anything left over is not a code comment: a decision goes in the ADR, a rule in `CONTRIBUTING.md`, a follow-up in an issue. `// TODO:` markers already in a file are not covered by this and stay.
+
+**How to apply:** reach for a name first, a `///` above the object second, and never a `//` in the middle of a method.
