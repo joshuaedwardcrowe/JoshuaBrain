@@ -15,7 +15,7 @@
 - [Refer to issues by title](feedback_refer_to_issues_by_title.md) — lead with the issue's title in conversation, never the bare number alone
 - [No self-moving status gates](feedback_no_self_moving_status_gates.md) — never move a Status field past a human-verification value (In QA, Done, etc.) yourself; attach evidence, let the human move it
 - [Spike scope assumption](feedback_spike_scope_assumption.md) — a spike's write-up needs implementation-level resolution, not a verdict; canonical text lives in SoloCAIRN PR#21, not here
-- [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, but dense is not clear: cut words, never the connective tissue; lead with the decision, not the archaeology (enforced at write time by `~/.claude/rules/writing-markdown.md`)
+- [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, but dense is not clear: cut words, never the connective tissue; lead with the decision, not the archaeology; a question gets a one-line answer, then stop (enforced at write time by `~/.claude/rules/writing-markdown.md`)
 - [No personal examples in generic docs](feedback_no_personal_examples_in_generic_docs.md) — abstract real personal details before they go into a methodology doc like SPENDFULNESS.md, even mundane ones
 - [No process without a consumer](feedback_no_process_without_a_consumer.md) — name the decision a velocity/iteration/report/field feeds and who makes it; no consumer, don't add it
 - [Names over why-comments](feedback_names_over_why_comments.md) — no inline why-comments ever; put it in a name, or a `///` doc comment above the object
