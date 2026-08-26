@@ -1,3 +1,5 @@
+Operative one-liners live in `rules/`, symlinked into `~/.claude/rules/` so they load every session: answering, planning work, branches/PRs/comments, changing code, writing markdown, memory. The files below hold the reasoning behind them — change one, change the other.
+
 ## Feedback — reactive corrections (a specific mistake, don't repeat it)
 
 - [Permission prompts](feedback_permission_prompts.md) — discuss adding a permanent allow rule instead of re-prompting; check for a phrasing fix first
