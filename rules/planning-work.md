@@ -13,10 +13,6 @@ Full reasoning: the named files in `~/.claude/projects/-Users-joshuacrowe/memory
 - **Issue titles**: plain-language problem statement at idea stage; `type(scope):
   description` once a spike carves out delivery sub-issues. Don't retitle old ones.
   (`methodology_issue_title_convention`)
-- **Every ticket body is laymen's terms** — problem first in plain words, so someone
-  with no domain knowledge can pick it up; name a type only where the implementer must
-  type it. Dense sibling tickets are not a licence to match them.
-  (`feedback_tickets_in_laymens_terms`)
 - **Never decompose into sub-issues alone.** Delivery order is agreed with the user
   first, a handful at a time; a new project opens with a planning spike.
   (`feedback_subissue_chronological_order`)
