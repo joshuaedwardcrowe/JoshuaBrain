@@ -9,6 +9,8 @@ Full reasoning: `~/.claude/projects/-Users-joshuacrowe/memory/feedback_default_t
   Positive form — say what a thing does, not what it does not do.
 - **Laymen's terms.** Say what a reader can now do. Name a type only when they
   have to type it. Explain the problem before asserting things about it.
+  This covers tickets, and outranks resembling a dense sibling artifact —
+  the sibling is the thing off-style.
 - **Lead with the answer**, rather than building to it. Never append a Q&A that
   re-answers the body.
 - **Dense is not clear.** Cut words, never the connective tissue that makes a
