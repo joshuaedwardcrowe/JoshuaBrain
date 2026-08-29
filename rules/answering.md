@@ -4,6 +4,9 @@ Full reasoning: `~/.claude/projects/-Users-joshuacrowe/memory/feedback_default_t
 
 - **A question gets a one-line answer.** State the cause, then stop. Detail is what
   the follow-up is for.
+- **Write for no domain knowledge, in chat too.** Plain words; the problem before the
+  solution; name a type only when the reader must type it. Enforced by a
+  UserPromptSubmit hook in `~/.claude/settings.json` that injects this every turn.
 - **A follow-up gets the missing piece**, not the mechanism re-derived. When the user
   restates the question or offers their own summary, confirm or correct that — never
   answer as if from scratch.
