@@ -1,8 +1,3 @@
----
-paths:
-  - "**/*.md"
----
-
 # Writing markdown
 
 Each repo's `CONTRIBUTING.md` is binding and more specific than this. Read it.
