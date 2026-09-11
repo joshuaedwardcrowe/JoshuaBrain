@@ -24,6 +24,7 @@ Operative one-liners live in `rules/`, symlinked into `~/.claude/rules/` so they
 - [Batch GitHub Project writes](feedback_batch_github_project_writes.md) — one aliased GraphQL request, never a `gh project item-edit` loop; per-item CLI calls spend both core and graphql budget
 - [No unrequested deviation](feedback_no_unrequested_deviation.md) — resemble the code's previous shape; renames, helper extractions and new abstractions need asking for
 - [Search issues before proposing](feedback_search_issues_before_proposing.md) — an existing spike issue sets the doc type and the verdict format; check before writing a design doc
+- [Issue problem must be true](feedback_issue_problem_must_be_true.md) — verify a Problem section against source and say what it costs the reader today; never claim a capability is missing without checking the workaround
 
 ## Feedback — methodology (stated working practices, not corrections)
 
