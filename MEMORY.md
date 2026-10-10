@@ -25,6 +25,7 @@ Operative one-liners live in `rules/`, symlinked into `~/.claude/rules/` so they
 - [No unrequested deviation](feedback_no_unrequested_deviation.md) — resemble the code's previous shape; renames, helper extractions and new abstractions need asking for
 - [Search issues before proposing](feedback_search_issues_before_proposing.md) — an existing spike issue sets the doc type and the verdict format; check before writing a design doc
 - [Issue problem must be true](feedback_issue_problem_must_be_true.md) — verify a Problem section against source and say what it costs the reader today; never claim a capability is missing without checking the workaround
+- [No unrequested GitHub actions](feedback_no_unrequested_github_actions.md) — a chat statement about design/scope is not a request to post or edit anything on GitHub; only act there when explicitly asked
 
 ## Feedback — methodology (stated working practices, not corrections)
 
