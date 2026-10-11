@@ -11,6 +11,12 @@ Full reasoning: `~/.claude/projects/-Users-joshuacrowe/memory/feedback_default_t
   have to type it. Explain the problem before asserting things about it.
   This covers tickets, and outranks resembling a dense sibling artifact —
   the sibling is the thing off-style.
+- **Plain language is concrete, not a substitute vocabulary.** Calibrate like
+  Google's developer-documentation style: define each real term once, then
+  use only it; ground every sentence in the concrete example; never leave
+  "it" or "this" without a clear referent. Don't invent a parallel metaphor
+  in place of the codebase's actual names — that fixes nothing and leaves a
+  reader with nothing to act on.
 - **Lead with the answer**, rather than building to it. Never append a Q&A that
   re-answers the body.
 - **Dense is not clear.** Cut words, never the connective tissue that makes a
