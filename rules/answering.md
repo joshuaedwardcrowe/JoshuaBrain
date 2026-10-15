@@ -15,5 +15,8 @@ Full reasoning: `~/.claude/projects/-Users-joshuacrowe/memory/feedback_default_t
 - **Chat replies are about two sentences** unless an option list or a walkthrough is
   asked for.
 - **Flagged as too long means delete**, not rephrase-and-shorten.
+- **Show state across a sequence grouped by the unit whose boundary matters** — a block
+  per run, per request — ideally a mermaid `rect` per group, not annotated lines or a
+  wide table. (`feedback_group_by_the_unit_that_changes`)
 - **Refer to an issue by its title**, optionally with its number. A bare number belongs
   only in a command argument.
