@@ -17,6 +17,8 @@ Full reasoning: `~/.claude/projects/-Users-joshuacrowe/memory/feedback_default_t
   "it" or "this" without a clear referent. Don't invent a parallel metaphor
   in place of the codebase's actual names — that fixes nothing and leaves a
   reader with nothing to act on.
+- **State the choice and its consequence; cut the reasoning between them.**
+  A link carries the citation.
 - **Lead with the answer**, rather than building to it. Never append a Q&A that
   re-answers the body.
 - **Dense is not clear.** Cut words, never the connective tissue that makes a
