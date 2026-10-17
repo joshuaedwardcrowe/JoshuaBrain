@@ -19,6 +19,7 @@ Operative one-liners live in `rules/`, symlinked into `~/.claude/rules/` so they
 - [Spike scope assumption](feedback_spike_scope_assumption.md) — a spike's write-up needs implementation-level resolution, not a verdict; canonical text lives in SoloCAIRN PR#21, not here
 - [Default to brevity](feedback_default_to_brevity.md) — fewest words that make the point, but dense is not clear: cut words, never the connective tissue; lead with the decision, not the archaeology; a question gets a one-line answer, then stop (loaded every session via `~/.claude/rules/writing-markdown.md`)
 - [Group by the unit that changes](feedback_group_by_the_unit_that_changes.md) — explain state across a sequence with a block per run/request (mermaid `rect`), not annotated lines or wide tables
+- [Chart numbers over tables](feedback_chart_numbers_over_tables.md) — comparative figures go in a mermaid `xychart-beta` bar chart, one labelled bar per group and period; prose only for methodology and caveats
 - [No personal examples in generic docs](feedback_no_personal_examples_in_generic_docs.md) — abstract real personal details before they go into a methodology doc like SPENDFULNESS.md, even mundane ones
 - [No process without a consumer](feedback_no_process_without_a_consumer.md) — name the decision a velocity/iteration/report/field feeds and who makes it; no consumer, don't add it
 - [Names over why-comments](feedback_names_over_why_comments.md) — no inline why-comments ever; put it in a name, or a `///` doc comment above the object
