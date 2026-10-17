@@ -16,10 +16,10 @@ Full reasoning: the named files in `~/.claude/projects/-Users-joshuacrowe/memory
 - **Never decompose into sub-issues alone.** Delivery order is agreed with the user
   first, a handful at a time; a new project opens with a planning spike.
   (`feedback_subissue_chronological_order`)
-- **A spike's verdict asks whether the work is as small as the issue assumed**, not
+- **A spike's verdict asks whether new code must be written to achieve it**, not
   whether its questions got answered. No new complexity: close the spike, open a fresh
-  delivery ticket. New complexity: parent stays open, work hangs off it.
-  (`feedback_spike_outcome_rule`)
+  delivery ticket. New complexity: parent stays open, work hangs off it. A spike that
+  finds both writes two investigations. (`feedback_spike_outcome_rule`)
 - **Never move a Status field past a human-verification value** — In QA, Done, and the
   like. Attach the evidence and let the human move the card.
   (`feedback_no_self_moving_status_gates`)

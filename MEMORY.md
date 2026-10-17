@@ -7,7 +7,7 @@ Operative one-liners live in `rules/`, symlinked into `~/.claude/rules/` so they
 - [Memory editing style](feedback_memory_editing_style.md) — rewrite corrected facts as clean current-state snapshots, no correction narrative
 - [Milestone naming convention](feedback_milestone_naming_convention.md) — name after the external spec/version (e.g. `YNAB API v1.86.0`), not a goal description
 - [Sub-issue chronological order](feedback_subissue_chronological_order.md) — hard rule: sub-issues must be planned jointly for delivery order; new projects start with a planning spike (mixed: rule + a sequencing mistake it came from)
-- [Spike outcome rule](feedback_spike_outcome_rule.md) — verdict asks whether the work is as small as the issue assumed; no-new-complexity closes into a fresh ticket, new-complexity keeps the parent open with sub-issues
+- [Spike outcome rule](feedback_spike_outcome_rule.md) — verdict asks whether new code must be written; no-new-complexity closes into a fresh ticket, new-complexity keeps the parent open with sub-issues
 - [Idea routing](feedback_idea_routing.md) — future feature ideas go on that repo's own GitHub Ideas board as an issue, not into memory
 - [Issue closure requires agreement](feedback_issue_closure_requires_agreement.md) — never word a PR/summary as "closing" an issue or use GitHub auto-close keywords until the user has agreed the PR resolves it
 - [PR review response triage](feedback_pr_review_response_triage.md) — sort review comments into fix/question/out-of-scope-idea and share the triage before editing any files
