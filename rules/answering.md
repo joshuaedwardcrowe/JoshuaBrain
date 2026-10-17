@@ -19,6 +19,6 @@ Full reasoning: `~/.claude/projects/-Users-joshuacrowe/memory/feedback_default_t
   per run, per request — ideally a mermaid `rect` per group, not annotated lines or a
   wide table. (`feedback_group_by_the_unit_that_changes`)
 - **Show comparative numbers as a mermaid `xychart-beta` bar chart**, not a table or
-  prose — one labelled bar per group and period. (`feedback_chart_numbers_over_tables`)
+  prose — one chart per measure and unit, plain bar labels. (`feedback_chart_numbers_over_tables`)
 - **Refer to an issue by its title**, optionally with its number. A bare number belongs
   only in a command argument.

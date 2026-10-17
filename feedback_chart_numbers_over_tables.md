@@ -9,4 +9,4 @@ Show numbers that compare as a mermaid `xychart-beta` bar chart, not as a table 
 
 **Why:** On 2026-10-17, KitCli review 0003 (development pace) first gave its before/after figures as a table. Offered a bar chart instead, the user said: "Boom! I'd prefer that over tables or prose really."
 
-**How to apply:** `xychart-beta` cannot stack bars or show a key, so put one bar series on the chart and label each bar with both its group and its period ("Code Feb", "Code Jul-Oct"). Both GitHub and the docfx modern template draw it. Related: [[feedback_group_by_the_unit_that_changes]], [[feedback_default_to_brevity]].
+**How to apply:** One chart per measure, with a plain label on each bar ("February", "July to October") and one unit per chart. `xychart-beta` has no key and cannot stack or group bars, so a single chart mixing measures or units ("Code Feb", "Tests now", "PRs merged before") reads as "confusing ass graphs". Both GitHub and the docfx modern template draw it. Related: [[feedback_group_by_the_unit_that_changes]], [[feedback_default_to_brevity]].
